@@ -228,8 +228,7 @@ with tabs[2]:
         st.markdown("### Foundation: Rational Average Cost Function $A(s)$")
         st.latex(r"A(s) = rac{F}{s} + v = rac{" + f"{f_val:.0f}" + r"}{s} + " + f"{v_val:.2f}")
         st.markdown(
-            f"- **Practical Domain:** $0 < s \le {cap_val}$ attended seats/month (undefined at $s = 0$).  
-"
+rf"- **Practical Domain:** $0 < s \le {cap_val}$ attended seats/month (undefined at $s = 0$).""
             f"- **Vertical Asymptote:** $s = 0$ (as seats approach 0, fixed cost per seat grows without bound).  
 "
             f"- **Horizontal Behavior:** Approaches $y = \${v_val:.2f}/\text{{seat}}$ as $s$ grows (bounded by capacity $s = {cap_val}$, where $A({cap_val}) = \${precalc_average_cost(cap_val, f_val, v_val):.2f}/\text{{seat}}$)."
